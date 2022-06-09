@@ -5,7 +5,6 @@ while True:
     ret, frame = data.read()
     if ret:
         cv2.imshow('sample data', frame)
-        # cv2.waitKey(1)
         if cv2.waitKey(10) & 0xFF == ord("q"):
             break
     else:
